@@ -32,12 +32,13 @@
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.lblAmountDue = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
-            this.chkDiscount = new System.Windows.Forms.CheckBox();
+            this.chkDiscount1 = new System.Windows.Forms.CheckBox();
             this.radBalcony = new System.Windows.Forms.RadioButton();
             this.radGeneral = new System.Windows.Forms.RadioButton();
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.chkDiscount2 = new System.Windows.Forms.CheckBox();
             this.radBack = new System.Windows.Forms.RadioButton();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
@@ -45,15 +46,23 @@
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Location = new System.Drawing.Point(48, 48);
+            this.lblQuantity.Location = new System.Drawing.Point(48, 48);
+            this.lblQuantity.Location = new System.Drawing.Point(64, 59);
+            this.lblQuantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantity.Location = new System.Drawing.Point(64, 59);
             this.lblQuantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(46, 13);
+            this.lblQuantity.Size = new System.Drawing.Size(46, 13);            this.lblQuantity.Size = new System.Drawing.Size(55, 16);
             this.lblQuantity.Size = new System.Drawing.Size(55, 16);
             this.lblQuantity.TabIndex = 0;
             this.lblQuantity.Text = "Quantity";
             // 
             // txtQuantity
             // 
+            this.txtQuantity.Location = new System.Drawing.Point(148, 59);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuantity.Location = new System.Drawing.Point(148, 59);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtQuantity.Name = "txtQuantity";
@@ -66,6 +75,7 @@
             this.lblAmountDue.Location = new System.Drawing.Point(325, 59);
             this.lblAmountDue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAmountDue.Name = "lblAmountDue";
+            this.lblAmountDue.Size = new System.Drawing.Size(66, 13);
             this.lblAmountDue.Size = new System.Drawing.Size(80, 16);
             this.lblAmountDue.TabIndex = 2;
             this.lblAmountDue.Text = "Amount Due";
@@ -73,28 +83,46 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Location = new System.Drawing.Point(436, 65);
+            this.lblAmount.Location = new System.Drawing.Point(327, 53);
+            this.lblAmount.Location = new System.Drawing.Point(327, 53);            this.lblAmount.Location = new System.Drawing.Point(436, 65);
             this.lblAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(0, 16);
             this.lblAmount.TabIndex = 3;
             // 
             // chkDiscount
+            // chkDiscount1
             // 
-            this.chkDiscount.AutoSize = true;
-            this.chkDiscount.Location = new System.Drawing.Point(148, 117);
-            this.chkDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.chkDiscount.Name = "chkDiscount";
-            this.chkDiscount.Size = new System.Drawing.Size(123, 20);
-            this.chkDiscount.TabIndex = 5;
-            this.chkDiscount.Text = "Senior / Student";
-            this.chkDiscount.UseVisualStyleBackColor = true;
+            this.chkDiscount1.AutoSize = true;
+            this.chkDiscount1.Location = new System.Drawing.Point(148, 117);
+            this.chkDiscount1.Margin = new System.Windows.Forms.Padding(4);
+            this.chkDiscount1.Name = "chkDiscount1";
+            this.chkDiscount1.Size = new System.Drawing.Size(123, 20);
+            this.chkDiscount1.TabIndex = 5;
+            this.chkDiscount1.Text = "Senior / Student";
+            this.chkDiscount1.UseVisualStyleBackColor = true;
+            this.chkDiscount1.CheckedChanged += new System.EventHandler(this.chkDiscount1_CheckedChanged);
+            this.chkDiscount2.AutoSize = true;
+            this.chkDiscount2.Location = new System.Drawing.Point(148, 117);
+            this.chkDiscount2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkDiscount2.Name = "chkDiscount";
+            this.chkDiscount2.Size = new System.Drawing.Size(123, 20);
+            this.chkDiscount2.TabIndex = 5;
+            this.chkDiscount2.Text = "Senior / Student";
+            this.chkDiscount2.UseVisualStyleBackColor = true;
+            // 
+            // radBalcony
+            // 
+            this.radBalcony.AutoSize = true;
             // 
             // radBalcony
             // 
             this.radBalcony.AutoSize = true;
             this.radBalcony.Location = new System.Drawing.Point(35, 21);
+            this.radBalcony.Margin = new System.Windows.Forms.Padding(4);
+            this.radBalcony.Location = new System.Drawing.Point(35, 21);
             this.radBalcony.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radBalcony.Name = "radBalcony";
             this.radBalcony.Name = "radBalcony";
             this.radBalcony.Size = new System.Drawing.Size(77, 20);
             this.radBalcony.TabIndex = 6;
@@ -105,6 +133,8 @@
             // 
             this.radGeneral.AutoSize = true;
             this.radGeneral.Checked = true;
+            this.radGeneral.Location = new System.Drawing.Point(35, 49);
+            this.radGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.radGeneral.Location = new System.Drawing.Point(35, 49);
             this.radGeneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radGeneral.Name = "radGeneral";
@@ -117,6 +147,8 @@
             // radBox
             // 
             this.radBox.AutoSize = true;
+            this.radBox.Location = new System.Drawing.Point(35, 78);
+            this.radBox.Margin = new System.Windows.Forms.Padding(4);
             this.radBox.Location = new System.Drawing.Point(35, 78);
             this.radBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radBox.Name = "radBox";
@@ -132,8 +164,12 @@
             this.grpSection.Controls.Add(this.radGeneral);
             this.grpSection.Controls.Add(this.radBalcony);
             this.grpSection.Location = new System.Drawing.Point(69, 174);
+            this.grpSection.Margin = new System.Windows.Forms.Padding(4);
+            this.grpSection.Location = new System.Drawing.Point(69, 174);
             this.grpSection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpSection.Name = "grpSection";
+            this.grpSection.Padding = new System.Windows.Forms.Padding(4);
+            this.grpSection.Size = new System.Drawing.Size(185, 137);
             this.grpSection.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpSection.Size = new System.Drawing.Size(185, 137);
             this.grpSection.TabIndex = 9;
@@ -143,6 +179,8 @@
             // cmdCalculate
             // 
             this.cmdCalculate.Location = new System.Drawing.Point(392, 330);
+            this.cmdCalculate.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdCalculate.Location = new System.Drawing.Point(392, 330);
             this.cmdCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdCalculate.Name = "cmdCalculate";
             this.cmdCalculate.Size = new System.Drawing.Size(144, 43);
@@ -150,6 +188,17 @@
             this.cmdCalculate.Text = "Calculate";
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
+            // 
+            // chkDiscount2
+            // 
+            this.chkDiscount2.AutoSize = true;
+            this.chkDiscount2.Location = new System.Drawing.Point(289, 117);
+            this.chkDiscount2.Name = "chkDiscount2";
+            this.chkDiscount2.Size = new System.Drawing.Size(59, 20);
+            this.chkDiscount2.TabIndex = 11;
+            this.chkDiscount2.Text = "Child";
+            this.chkDiscount2.UseVisualStyleBackColor = true;
+            this.chkDiscount2.CheckedChanged += new System.EventHandler(this.chkDiscount2_CheckedChanged);
             // 
             // radBack
             // 
@@ -167,13 +216,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 548);
+            this.Controls.Add(this.chkDiscount2);
+            this.ClientSize = new System.Drawing.Size(811, 548);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
-            this.Controls.Add(this.chkDiscount);
+            this.Controls.Add(this.chkDiscount1);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblAmountDue);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.lblQuantity);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TicketsForm";
             this.Text = "Theater Ticket Purchase";
@@ -192,11 +244,13 @@
         private System.Windows.Forms.Label lblAmountDue;
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.CheckBox chkDiscount;
+        private System.Windows.Forms.CheckBox chkDiscount1;
         private System.Windows.Forms.RadioButton radBalcony;
         private System.Windows.Forms.RadioButton radGeneral;
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.CheckBox chkDiscount2;
         private System.Windows.Forms.RadioButton radBack;
     }
 }
