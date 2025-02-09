@@ -1,9 +1,9 @@
-
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
-namespace MyNameSpace
+namespace Ticketing
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace MyNameSpace
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ticketing.TicketsForm());
+            Application.Run(new TicketsForm());
         }
     }
 }
